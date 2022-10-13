@@ -1,0 +1,19 @@
+import random
+ans = random.randrange(1, 101)
+# print(ans)
+a = 0
+while a < 5:
+  guess = int(input("輸入一個1-100的數字"))
+  if guess == ans:
+    print("答對了!")
+    break
+  if guess > ans:
+    print("太大了")
+  if guess < ans:
+    print("太小了")
+  a += 1
+while a == 5:
+  print("-遊戲結束-")
+  print("正確答案是:")
+  print(ans)
+  break
